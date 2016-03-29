@@ -136,9 +136,15 @@ $lang['STATS_POP'] = 'TOP 50 AVG POPULATION GROWTH';
 
 //FORGOT PASSWORD
 
+<<<<<<< HEAD
 $lang['FORGOT_EMAIL'] = 'Provide the email address of your account. We will send you a link to reset your password.';
 $lang['FORGOT_ADDRESS'] = 'Email Address';
 $lang['FORGOT_SEND'] = 'Request password reset';
+=======
+$lang['FORGOT_EMAIL'] = 'Provide the email address of your account';
+$lang['FORGOT_ADDRESS'] = 'Email Address';
+$lang['FORGOT_SEND'] = 'Send me my login info';
+>>>>>>> origin/master
 $lang['FORGOT_CANCEL'] = 'Return to the login page';
 $lang['RESET_PASSWORD'] = 'Reset password';
 
