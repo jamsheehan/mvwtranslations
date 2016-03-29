@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
 ------------------
 Language: English US
 ------------------
@@ -7,14 +7,14 @@ Language: English US
 
 
 /*
-** Instructions for Editing ***	
+** Instructions for Editing ***
 1. Only alter what's in the ''
 2. Do not change the names of keys
 3. Do not change the lines or sort
 4. Do not duplicate lines
 5. If you see spaces at the end or beginning, these are intentional e.g. ' from your account. '
 6. If you need to put in a ' put a \ before it
-7. If you see some HTML code e.g. <strong> please do not alter, but feel free to move around if the sentence does not make sense. Note that some strings are the middle of sentences. 
+7. If you see some HTML code e.g. <strong> please do not alter, but feel free to move around if the sentence does not make sense. Note that some strings are the middle of sentences.
 
 */
 
@@ -26,11 +26,12 @@ $lang['GAME_CATCH'] = 'Multiverse Warriors is a persistent universe massively mu
 $lang['GAME_JOIN'] = 'Join countless players from around the world and start your empire, today.';
 //$lang['GAME_SPIEL'] = 'Play as any of a number of races originating from throughout the Multiverse';
 
-/* 
+/*
 ------------------
 Logged Out Pages
 ------------------
 */
+
 
 //Index Page
 $lang['INDEX_PLAYERS_ONLINE'] = 'Players online now:';
@@ -135,13 +136,11 @@ $lang['STATS_POP'] = 'TOP 50 AVG POPULATION GROWTH';
 
 //FORGOT PASSWORD
 
-$lang['FORGOT_PROVIDE'] = 'Provide us with information using <strong>ONE</strong> of boxes below to. We will locate your account and send a new password to your email address';
-$lang['FORGOT_EMAIL'] = 'The email address of your account';
+$lang['FORGOT_EMAIL'] = 'Provide the email address of your account. We will send you a link to reset your password.';
 $lang['FORGOT_ADDRESS'] = 'Email Address';
-$lang['FORGOT_SEND'] = 'Send me my login info';
-$lang['FORGOT_USER'] = 'The username of your account';
-$lang['FORGOT_USERNAME'] = 'Username';
+$lang['FORGOT_SEND'] = 'Request password reset';
 $lang['FORGOT_CANCEL'] = 'Return to the login page';
+$lang['RESET_PASSWORD'] = 'Reset password';
 
 $lang['FORGOT_ACTIVATE1'] = 'Welcome ';
 $lang['FORGOT_ACTIVATE2'] = 'Please follow the link below to active your account:';
@@ -152,15 +151,14 @@ $lang['FORGOT_EMINVALID'] = 'The email you have entered is not valid, please try
 $lang['FORGOT_CHARACTERS'] = 'The email you have entered has invalid characters, please try again.';
 $lang['FORGOT_NOTONFILE'] = 'That email address is not on file.';
 $lang['FORGOT_HELLO'] = 'Hello ';
-$lang['FORGOT_PWIS'] = 'Your password is:';
 $lang['FORGOT_PWSENT'] = 'Password was sent to your email address';
 $lang['FORGOT_UN'] = 'You should enter a user name.';
 $lang['FORGOT_ILLEGAL'] = 'That name has illegal characters. Please use only a-z, 1-9, [, ], _, . and space.';
 $lang['FORGOT_PLAYER'] = 'No such player name on file.';
 $lang['FORGOT_RESENT'] = 'Hello your username is ';
-$lang['FORGOT_SPAM'] = 'Password was sent to your email address, make sure to check your spam folder';
+$lang['FORGOT_SPAM'] = 'A link to reset your account password has been sent to your email address, make sure to check your spam folder';
 $lang['FORGOT_MVW'] = 'MVW Account Registration';
-$lang['FORGOT_LOGIN'] = 'To login use the above details from the following URL: ';
+$lang['FORGOT_LOGIN'] = 'To reset your password please go the following URL. This link will only be active for 24 hours.';
 
 //UPDATES
 
@@ -340,7 +338,7 @@ Logged In Pages
 */
 
 // COMMON
-$lang['HEADER_MESSAGES'] = 'Messages';
+$lang['HEADER_MESSAGES'] = 'Game Mail';
 $lang['HEADER_NOTIFICATIONS'] = 'Notifications';
 $lang['HEADER_MV'] = 'MV Points';
 $lang['HEADER_TURN'] = 'Next Turn';
@@ -447,6 +445,7 @@ $lang['COMPONENTS_UPKEEP_DEPLETED2'] = 'per turn.';
 $lang['COMPONENTS_UPKEEP_LOSING1'] = 'You are losing';
 $lang['COMPONENTS_UPKEEP_LOSING2'] = 'food per turn. Your supply will be depleted in';
 $lang['COMPONENTS_UPKEEP_LOSING3'] = 'turns';
+$lang['COMPONENTS_UPKEEP_NOTHING'] = 'Your Upkeep management is perfect. No action required';
 $lang['COMPONENTS_UPKEEP'] = 'Upkeep';
 $lang['COMPONENTS_UPKEEP_EARNINGTOOLTIP1'] = 'Always make sure you can afford your upkeep, or else ships may start to disappear! You require';
 $lang['COMPONENTS_UPKEEP_EARNINGTOOLTIP2'] = 'Farmers to maintain the current upkeep';
@@ -655,21 +654,33 @@ $lang['COMPONENTS_COVERT_COP_SPIES_DESC1'] = 'Deploying agents costs ';
 $lang['COMPONENTS_COVERT_COP_SPIES_DESC2'] = ' food per spy';
 $lang['COMPONENTS_COVERT_COP_PROGRESS'] = ' % Complete';
 $lang['COMPONENTS_COVERT_COP_VIEW'] = 'View Intel';
+$lang['COSTS'] = 'Costs';
+$lang['FOOD'] = 'food';
+$lang['GOLD'] = 'credits';
+$lang['METAL'] = 'metal';
 
-$lang['COMPONENTS_COVERT_COD_UNITS'] = 'Units';
+$lang['UNITS'] = 'Units';
+$lang['UNCOVERED_UNITS'] = 'Uncovered units';
+$lang['UNCOVERED_OPERATION_CELL'] = 'Cell #';
+$lang['OPERATION_CELLS'] = 'Discovered Operation Cells';
+$lang['OPERATION_CELLS_DESC'] = 'Discovered by your defending spies, operation cells represent a fraction of the larger operations deployed against you.<br><br>These cells can be investigated and destroyed to ensure the security of your empire.';
+$lang['OPERATION_EXPELLED'] = 'You have purged this cell from your empire.';
+$lang['OPERATION_INVESTIGATED'] = 'Your spies have completed their investigation.';
+$lang['CELLS_NONE'] = "Your spies have not uncovered any operation cells within your empire.<br><br>Detection occurs automatically, train additional spies to increase their chance of success.";
+$lang['FREE'] = 'Free';
+
 $lang['COMPONENTS_COVERT_COD_POINTS'] = 'Intel Points';
-$lang['COMPONENTS_COVERT_COD_OWNER'] = 'Owner';
+$lang['OWNER'] = 'Owner';
 $lang['COMPONENTS_COVERT_COD_TOOLTIP'] = '<p>An operation becomes more vulnerable when you use the uncover action.</p><p>A higher vulnerability will result in increased effectiveness of the counter Intel actions below.</p>';
-$lang['COMPONENTS_COVERT_COD_VUN'] = 'Vulnerability';
-$lang['COMPONENTS_COVERT_COD_ACTIONS'] = 'Actions';
-$lang['COMPONENTS_COVERT_COD_EXPEL_DESC1'] = 'Raise the awareness level by ';
-$lang['COMPONENTS_COVERT_COD_EXPEL_DESC2'] = ' in an attempt to cast enemy agents out of your empire.';
-$lang['COMPONENTS_COVERT_COD_EXPEL_DESC3'] = 'Remove enemy agents.';
-$lang['COMPONENTS_COVERT_COD_EXPEL_BUTTON'] = 'Expel';
-$lang['COMPONENTS_COVERT_COD_EXPEL_DESC4'] = ' in an attempt to spread false information to enemy agents.';
-$lang['COMPONENTS_COVERT_COD_EXPEL_DESC5'] = 'Reduce the progress of this operation.';
-$lang['COMPONENTS_COVERT_COD_EXPEL_DECEIVE'] = 'Deceive';
-
+$lang['ACTIONS'] = 'Actions';
+$lang['OPERATIONS_EXPEL_DESC'] = "Instantly remove this cell and it's discovered agents from your empire.<br><br>This will result in a loss of intel points for the operation, but the spies will safely return home.";
+$lang['OPERATIONS_INVESTIGATE_DESC'] = 'Investigate a cell to uncover additional units and reveal the player responsible.<br><br>Larger cells are more easily detected, and training additional spies will improve your success.';
+$lang['OPERATIONS_INVESTIGATE_COST_DESC_1'] = 'Investigating an operation cell costsa base rate of ';
+$lang['OPERATIONS_INVESTIGATE_COST_DESC_2'] = ' per trained spy in your empire.<br><br>Each cell will have an additional cost based on the number of discovered units.';
+$lang['OPERATIONS_INVESTIGATE_COST'] = 'Investigation Cost: ';
+$lang['INVESTIGATE'] = 'Investigate';
+$lang['EXPEL'] = 'Expel';
+$lang['SPIES_DISCOVERED'] = 'Your spies report the following:';
 $lang['COMPONENTS_COVERT_CON_TITLE'] = 'Deploy Covert Operation';
 $lang['COMPONENTS_COVERT_CON_ASSIGN'] = 'Agents to Assign (available agents:';
 $lang['COMPONENTS_COVERT_CON_TYPE'] = 'Operation Type';
@@ -710,7 +721,10 @@ $lang['MANAGE_NOOPS'] = 'You have no current operations.';
 $lang['MANAGE_COVADVANTAGE'] = ' from covert level advantage';
 $lang['MANAGE_NO_ACTIVITY'] = 'Your spies report no suspicious activity.';
 $lang['MANAGE_ACTIVITY'] = 'Suspicious activity has been detected in your empire.';
-
+$lang['RECALL'] = 'Recall';
+$lang['DEPLOY'] = 'Deploy';
+$lang['SPIES_RECALL'] = 'Spies to recall';
+$lang['SPIES_DEPLOY'] = 'Spies to deploy';
 
 // MESSAGE BOARD
 $lang['MB_LD'] = 'Latest Discussion';
@@ -740,6 +754,9 @@ $lang['MB_WAM'] = 'Write a message';
 
 $lang['MESSAGES_HEADING'] = 'Message';
 $lang['MESSAGES_OPENED'] = 'Opened';
+$lang['MESSAGES_OPEN'] = 'Message Read';
+$lang['MESSAGES_UNOPEN'] = 'Message Unread';
+$lang['MESSAGES_READ'] = 'Read';
 $lang['MESSAGES_SUBJECT'] = 'Subject';
 $lang['MESSAGES_FROM'] = 'From';
 $lang['MESSAGES_TO'] = 'To';
@@ -753,7 +770,9 @@ $lang['MESSAGES_BACK'] = 'Back to Inbox';
 $lang['MAILBOX_SEND'] = 'Send Message';
 
 $lang['MAILBOX_DELETE'] = 'Delete All Messages';
+$lang['MAILBOX_AVAILABLE'] = 'Available Actions';
 $lang['MAILBOX_MAIL'] = 'Mail - ';
+$lang['MAILBOX_SELECT'] = 'Choose Mailbox';
 $lang['MAILBOX_INBOX'] = 'Inbox';
 $lang['MAILBOX_OUTBOX'] = 'Outbox';
 $lang['MAILBOX_ARCHIVE'] = 'Archive';
@@ -765,32 +784,39 @@ $lang['MAILBOX_PREVIOUS'] = ' Previous';
 // MVPOINTS
 
 $lang['TOP_DRAWER_MVPOINTS_DESC1'] = 'You currently have ';
-$lang['TOP_DRAWER_MVPOINTS_DESC2'] = 'Multiverse Points available to you. MV points are earned daily by logging into the game or large amounts are awarded to donators, and can be used for a number of different functions. ';
-$lang['TOP_DRAWER_MVPOINTS_DESC3'] = 'You can earn protection, boost income, boost Attack power, Hull and shields.';
+$lang['TOP_DRAWER_MVPOINTS_DESC2'] = 'Multiverse (MV) Points available to you. MV points are earned daily by logging into the game or large amounts are awarded to donators, and can be used for a number of different functions. ';
+$lang['TOP_DRAWER_MVPOINTS_DESC3'] = 'With MV Points you can earn protection, boost different areas of income, boost Attack power, Hull and shields, Purchase Name Changes, Base Points or Base Point Resets';
 $lang['TOP_DRAWER_MVPOINTS_DESC4'] = 'Multiverse Points can also be claimed by completing the Tutorial, and by actively ';
 $lang['TOP_DRAWER_MVPOINTS_DESC5'] = 'recruiting players';
 $lang['TOP_DRAWER_MVPOINTS_DESC6'] = ' to join the game.';
 $lang['TOP_DRAWER_MVPOINTS_BUY'] = 'PURCHASE POINTS';
 $lang['TOP_DRAWER_MVPOINTS_USE'] = 'VIEW ALL UPGRADES';
 
-$lang['MVBUY_TITLE'] = 'Purchase MV Points';
+$lang['MVBUY_TITLE'] = 'Multiverse Warriors Supporter Package';
 $lang['MVBUY_DEV_STOP'] = 'STOP';
 $lang['MVBUY_DEV_STOP_DESC'] = 'DO NOT DONATE FROM THIS URL AS DONATIONS WILL NOT AWARD YOUR POINTS';
 $lang['MVBUY_DEV_STOP_DESC1'] = 'This is our test site, please visit the main site at ';
 $lang['MVBUY_DEV_STOP_DESC2'] = ' and donate there.';
 $lang['MVBUY_DEV_THANKS'] = 'Thank you for your interest in Multiverse Warriors';
+$lang['MVBUY_1_AMOUNT'] = '3 MV Points';
+$lang['MVBUY_1'] = 'Purchasing this package will award you with 3 MV points';
+$lang['MVBUY_5_AMOUNT'] = '20 MV Points';
+$lang['MVBUY_5'] = 'Purchasing this package will award you with 20 MV points';
 $lang['MVBUY_10_AMOUNT'] = '50 MV Points';
 $lang['MVBUY_10'] = 'Purchasing this package will award you with 50 MV points';
 $lang['MVBUY_20_AMOUNT'] = '110 MV Points';
 $lang['MVBUY_20'] = 'Purchasing this package will award you with 110 MV points';
 $lang['MVBUY_50_AMOUNT'] = '300 MV Points';
 $lang['MVBUY_50'] = 'Purchasing this package will award you with 300 MV points';
+$lang['MVBUY_100_AMOUNT'] = '800 MV Points';
+$lang['MVBUY_100'] = 'Purchasing this package will award you with 800 MV points <strong>(BEST VALUE)</strong>';
 $lang['MVBUY_ENJOY'] = 'If you enjoy this game and would like to support this site, you may purchase MV Point packages using Paypal <em>(you do not need a Paypal account to use credit cards)</em>';
 $lang['MVBUY_PAYPAL'] = 'Paypal is a 3rd party secure payment processor. We never see your credit card details.';
+$lang['MVBUY_PAYPAL_ACCEPTS'] = 'Pay with PayPal, PayPal Credit or any major credit card';
 $lang['MVBUY_PAYMENTS'] = 'ALL payments are automated in order to get you the benefits immediately, and require the entire purchase process to be completed before you get the bonuses.';
 $lang['MVBUY_ECHECKS'] = 'Also note that eChecks are not processed immediately, and <strong>will NOT</strong> give you the upgrade until the funds have cleared! </em>';
 $lang['MVBUY_DONOTCLOSE'] = 'PLEASE do NOT close the browser before you return to a confirmation page!!. <br> Please DO continue following the onscreen prompts, until you reach a confirmation page!! <br> IF YOU DO NOT FINISH THE PROCESS, YOU WILL NOT GET THE BENEFITS!!';
-$lang['MVBUY_REFUND'] = '<strong>Please note</strong>: If at some point in the time-frame outlined in our Terms of Service you request a refund of the payment, we reserve the right to remove any and all benefits you obtained through the (now unpaid for) bonus.';
+$lang['MVBUY_REFUND'] = '<strong>Please note</strong>: If at some point within the specified time-frame outlined in our <a href="/tos.php" target="_blank"><strong>Terms of Service</strong></a> you request a refund of the payment, we reserve the right to remove any and all benefits you obtained through the (now unpaid for) bonus.';
 $lang['MVBUY_REFUND_NO'] = 'This includes the possible removal of in-game upgrades, research, military, population, etc. We also reserve the right to delete the account if a player\'s actions have are considered an intentional abuse of our system, in which case a refund will not be possible';
 $lang['MVBUY_TIME'] = 'All of this assumes a valid reason for the refund request, and a reasonable time from when  the donation was made (48 Hours).We will always try to act in a manner that is considered "fair".';
 $lang['MVBUY_UNDERSTAND'] = 'Thank you for your understanding.';
@@ -1078,7 +1104,7 @@ $lang['ACC_PW_CONFIRMATION'] = 'Are you sure you want to change your password?';
 $lang['ACC_PW_CHANGE'] = 'Change Password';
 $lang['ACC_PW_CONFIRM'] = 'Confirm Password';
 
-//RECRUITMENT 
+//RECRUITMENT
 
 $lang['RECRUITMENT_HELP1'] = 'This link enables you to introduce the game to your friends and family. Having these people register from your link will enable you to get rewards in the future.';
 $lang['RECRUITMENT_HELP2'] = 'Each time the person you got to join via your link donates to the game to obtain MV Points for themselves, you will in return get a bonus of MV points each and every time. This bonus will also snowball up to the person who got you to join via their link.';
@@ -1107,6 +1133,7 @@ $lang['ACCOUNT_EMAIL_INVALID1'] = 'The email you have entered is not valid, plea
 $lang['ACCOUNT_EMAIL_INVALID2'] = 'The email you have entered has invalid characters, please try again';
 $lang['ACCOUNT_EMAIL_DUPE'] = 'Emails you have entered are not equal.';
 $lang['ACCOUNT_EMAIL_EXISTS'] = 'That e-mail has already been taken.';
+$lang['ACCOUNT_EMAIL_SUCCESS'] = 'Your email has been successfully changed.';
 
 $lang['ACCOUNT_PASSWORD_SUCCESS'] = 'A new password has been sent to your new email address';
 
@@ -1123,8 +1150,9 @@ $lang['ACCOUNT_PASSWORD_BLANK'] = 'You should enter a password.';
 $lang['ACCOUNT_PASSWORD_ILLEGAL'] = 'That password has illegal characters.';
 $lang['ACCOUNT_PASSWORD_SHORT'] = 'A password must contain at least 2 letters.';
 $lang['ACCOUNT_PASSWORD_LONG'] = 'A password must contain at most 25 characters.';
-$lang['ACCOUNT_PASSWORD_ZERO'] = 'Password you have entered are not equal.';
+$lang['ACCOUNT_PASSWORD_ZERO'] = 'Passwords you have entered do not match.';
 $lang['ACCOUNT_PASSWORD_CHANGED'] = 'Your password has been changed.';
+$lang['PASSWORD_CONFIRM'] = 'Confirm Password';
 
 //$lang['ACCOUNT_RACE_ZERO'] = 'You do not have any race change\'s left';
 //$lang['ACCOUNT_RACE_OHOH'] = 'Information is incomplete';
@@ -1200,10 +1228,9 @@ $lang['ATTACK_ALERT_PEACE'] = 'You are at peace with this player!!!';
 $lang['ATTACK_ALERT_TURNS'] = 'You do not have enough attack turns';
 $lang['ATTACK_ALERT_PROTECTION'] = 'This player is under protection';
 $lang['ATTACK_ALERT_CLONE'] = 'You cannot attack them - they are virtually at your exact location! The risk of self damage is too great.';
-$lang['ATTACK_ALERT_TIMETRAVEL'] = 'There is a war already raging against this realm, also from your location. You do not really want to step into the middle of an existing fray.';
 $lang['ATTACK_ALERT_LOSEPROTECT'] = 'You did not confirm to lose your Protection, to attack you must lose it or wait!';
 
-$lang['RESEARCH_ITEM_UPGRADED'] = ' Upgraded';
+$lang['RESEARCH_ITEM_UPGRADED'] = 'Research item upgraded';
 $lang['RESEARCH_NOT_ENOUGH'] = 'Not Enough Resources!';
 $lang['RESEARCH_ATT_INCREASE'] = 'Increase the attack power of your ';
 $lang['RESEARCH_HULL_INCREASE'] = 'Increase the hull strength of your ';
@@ -1360,6 +1387,7 @@ $lang['ALLIANCE_MEMBER'] = 'Member';
 $lang['ALLIANCE_MEMBERS'] = 'Members';
 $lang['ALLIANCE_DISBAND'] = 'Disband Alliance';
 $lang['ALLIANCE_LEAVE'] = 'Leave Alliance';
+  $lang['MEMBERS'] = 'Members';
 $lang['ALLIANCE'] = 'Alliances';
 $lang['ALLIANCE_NONE'] = 'No alliances have been created';
 $lang['ALLIANCE_ALLIANCE'] = 'Alliance';
@@ -1371,6 +1399,7 @@ $lang['APPLICATION_REJECTED'] = 'Your alliance application has been rejected';
 $lang['APPLICATION_UPDATE_ACCEPT'] = 'Approve';
 $lang['APPLICATION_UPDATE_REJECT'] = 'Reject';
 $lang['ALLIANCE_CREATE'] = 'Create Alliance';
+$lang['ALLIANCE_CREATE_APPLICATION_PENDING'] = '<p>You can not create an alliance at this time.</p><p>To create an alliance, you must not be in an alliance and all pending applications must be resolved.</p>';
 $lang['ALLIANCE_CREATE_NAME'] = 'Alliance Name';
 $lang['ALLIANCE_CREATE_INSTRUCT'] = 'Create an Alliance to bind your allies to work together towards common goals.';
 $lang['ALLIANCE_NO_APPLICATIONS'] = 'No pending applications';
@@ -1382,6 +1411,9 @@ $lang['ALLIANCE_YOUR_WITHDRAW'] = 'Withdraw Application';
 $lang['UNIVERSE_ALLIANCE'] = 'Alliance';
 $lang['ALLIANCE_UNALIGNED'] = 'None';
 
+// CRON Commands
+
+$lang['NOTIFICATION_FREE_MV'] = 'You have earned an additional Multiverse Point. Log in again tomorrow to earn another FREE Point';
 
 
 
